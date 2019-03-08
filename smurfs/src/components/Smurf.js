@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { deleteSmurf } from '../actions';
 
-const Smurf = ({ smurf }) => {
+const Smurf = ({ smurf, deleteSmurf }) => {
   return (
     <div className='smurf'>
       <Link to={`smurf/${smurf.id}`} className='spotlight-link'>
@@ -9,7 +11,12 @@ const Smurf = ({ smurf }) => {
       </Link>
       <strong>{smurf.height} tall</strong>
       <p>{smurf.age} smurf years old</p>
-      <button className='delete-smurf-button'>Delete Smurf</button>
+      <button
+        onClick={() => deleteSmurf(smurf.id)}
+        className='delete-smurf-button'
+      >
+        Delete Smurf
+      </button>
       <Link to={`/editsmurfform/${smurf.id}`} className='edit-smurf-button'>
         Edit Smurf
       </Link>
@@ -17,4 +24,7 @@ const Smurf = ({ smurf }) => {
   );
 };
 
-export default Smurf;
+export default connect(
+  null,
+  { deleteSmurf }
+)(Smurf);

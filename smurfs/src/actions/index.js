@@ -69,6 +69,10 @@ export const editSmurf = smurf => dispatch => {
 };
 
 export const deleteSmurf = id => dispatch => {
+  if (id === 0) {
+    alert("Papa Smurf won't leave the village...");
+    return;
+  }
   dispatch({ type: DELETE_SMURF_REQUEST });
   return axios
     .delete(`http://localhost:3333/smurfs/${id}`)

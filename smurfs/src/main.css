@@ -87,7 +87,7 @@ h2 {
 input {
   font-family: 'Bubblegum Sans', cursive;
   font-size: 1.3em;
-  width: 23%;
+  width: 20%;
   border: 2px dotted #62cdfd;
   border-radius: 5px;
   padding: 3px 0 3px 7px;
@@ -98,7 +98,7 @@ input {
   font-size: 1.2em;
   background: #62cdfd;
   color: #f6f6f3;
-  width: 23%;
+  width: 30%;
   padding: 2px 0 0 0;
   border: none;
   border-radius: 5px;
