@@ -22,3 +22,5 @@ export const SmurfNavBar = () => {
     </div>
   );
 };
+
+export default SmurfNavBar;

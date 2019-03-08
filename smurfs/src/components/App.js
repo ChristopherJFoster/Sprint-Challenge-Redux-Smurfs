@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router';
 
 import SmurfNavBar from './SmurfNavBar';
+import SmurfVillage from './SmurfVillage';
 
 /*
  to wire this component up you're going to need a few things.
@@ -14,9 +15,9 @@ const App = () => {
     <div className='app'>
       <SmurfNavBar />
       <Route exact path='/' component={SmurfVillage} />
-      <Route path='/:id' component={SmurfSpotlight} />
+      {/* <Route path='/:id' component={SmurfSpotlight} />
       <Route path='/addsmurfform' component={AddSmurfForm} />
-      <Route path='/editsmurfform/:id' component={EditSmurfForm} />
+      <Route path='/editsmurfform/:id' component={EditSmurfForm} /> */}
     </div>
   );
 };
