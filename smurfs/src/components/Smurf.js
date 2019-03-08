@@ -6,7 +6,7 @@ import { deleteSmurf } from '../actions';
 const Smurf = ({ smurf, deleteSmurf }) => {
   return (
     <div className='smurf'>
-      <Link to={`smurf/${smurf.id}`} className='spotlight-link'>
+      <Link to={`/${smurf.id}`} className='spotlight-link'>
         <h3>{smurf.name}</h3>
       </Link>
       <strong>{smurf.height} tall</strong>

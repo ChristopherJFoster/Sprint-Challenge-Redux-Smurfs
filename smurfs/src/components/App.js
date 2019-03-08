@@ -4,6 +4,7 @@ import { Route } from 'react-router';
 import SmurfNavBar from './SmurfNavBar';
 import SmurfVillage from './SmurfVillage';
 import AddSmurfForm from './AddSmurfForm';
+import SmurfSpotlight from './SmurfSpotlight';
 
 /*
  to wire this component up you're going to need a few things.
