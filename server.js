@@ -17,19 +17,19 @@ let smurfs = [
     id: 0,
     name: 'Papa Smurf',
     age: 10000,
-    height: 'about three apples'
+    height: 'three apples'
   },
   {
     id: 1,
     name: 'Smurfette',
     age: 189,
-    height: 'about three apples'
+    height: 'three apples'
   },
   {
     id: 2,
     name: 'Brainy',
     age: 200,
-    height: 'about three apples'
+    height: 'three apples'
   }
 ];
 

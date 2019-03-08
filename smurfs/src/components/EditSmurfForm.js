@@ -41,7 +41,7 @@ const EditSmurfForm = ({ smurfs, match, history, editSmurf }) => {
   } else {
     return (
       <div className='smurf-form'>
-        <h1>Who's the new Smurf?</h1>
+        <h1>What needs updating?</h1>
         <form onSubmit={requestEditSmurf} className='form-inputs'>
           <input
             name='name'
@@ -65,7 +65,7 @@ const EditSmurfForm = ({ smurfs, match, history, editSmurf }) => {
             required
           />
           <button className='add-smurf-button' type='submit'>
-            Add smurf to the village
+            Submit smurf edits
           </button>
         </form>
       </div>
