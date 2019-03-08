@@ -57,14 +57,14 @@ export const addSmurf = smurf => dispatch => {
 };
 
 export const editSmurf = smurf => dispatch => {
-  dispatch({ type: ADD_SMURF_REQUEST });
+  dispatch({ type: EDIT_SMURF_REQUEST });
   return axios
     .put(`http://localhost:3333/smurfs/${smurf.id}`, smurf)
     .then(res => {
-      dispatch({ type: ADD_SMURF_SUCCESS, payload: res.data });
+      dispatch({ type: EDIT_SMURF_SUCCESS, payload: res.data });
     })
     .catch(err => {
-      dispatch({ type: ADD_SMURF_FAILURE, payload: err.response.data });
+      dispatch({ type: EDIT_SMURF_FAILURE, payload: err.response.data });
     });
 };
 

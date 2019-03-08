@@ -8,12 +8,10 @@ let spotlightedSmurf;
 const SmurfSpotlight = ({ match, smurfs, deleteSmurf }) => {
   useEffect(() => {
     if (!spotlightedSmurf) {
-      console.log('no spotlightedSmurf');
-      const id = parseInt(match.params.id, 10);
-      console.log(id);
-      console.log(smurfs);
-      spotlightedSmurf = smurfs.filter(smurf => id === smurf.id)[0];
-      console.log(spotlightedSmurf);
+      console.log('test');
+      spotlightedSmurf = smurfs.filter(
+        smurf => smurf.id === Number(match.params.id)
+      )[0];
     }
   });
 
@@ -38,9 +36,16 @@ const SmurfSpotlight = ({ match, smurfs, deleteSmurf }) => {
   );
 };
 
-const mapStateToProps = state => ({
-  smurfs: state.smurfs
-});
+const mapStateToProps = state => {
+  console.log(state.smurfs);
+  return {
+    smurf: state.smurfs
+  };
+};
+
+// const mapStateToProps = state => ({
+//   smurfs: state.smurfs
+// });
 
 export default connect(
   mapStateToProps,
