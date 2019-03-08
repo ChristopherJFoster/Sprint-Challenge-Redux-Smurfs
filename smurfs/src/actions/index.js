@@ -33,14 +33,14 @@ export const DELETE_SMURF_FAILURE = 'DELETE_SMURF_FAILURE';
 */
 
 export const fetchSmurfs = () => dispatch => {
-  dispatch({ type: FETCH_SMURF_REQUEST });
+  dispatch({ type: FETCH_SMURFS_REQUEST });
   return axios
     .get('http://localhost:3333/smurfs')
     .then(res => {
-      dispatch({ type: FETCH_SMURF_SUCCESS, payload: res.data });
+      dispatch({ type: FETCH_SMURFS_SUCCESS, payload: res.data });
     })
     .catch(err => {
-      dispatch({ type: FETCH_SMURF_FAILURE, payload: err.response.data });
+      dispatch({ type: FETCH_SMURFS_FAILURE, payload: err.response.data });
     });
 };
 
