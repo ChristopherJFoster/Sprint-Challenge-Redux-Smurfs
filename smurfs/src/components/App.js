@@ -18,8 +18,8 @@ const App = () => {
     <div className='app'>
       <SmurfNavBar />
       <Route exact path='/' component={SmurfVillage} />
-      <Route path='/smurfspotlight/:id' component={SmurfSpotlight} />
       <Route path='/addsmurfform' component={AddSmurfForm} />
+      <Route path='/smurfspotlight/:id' component={SmurfSpotlight} />
       <Route path='/editsmurfform/:id' component={EditSmurfForm} />
     </div>
   );

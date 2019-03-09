@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import useInput from '../utilities/useInput';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
+import useInput from '../utilities/useInput';
 import { editSmurf } from '../actions';
 
 const EditSmurfForm = ({ smurfs, match, history, editSmurf }) => {

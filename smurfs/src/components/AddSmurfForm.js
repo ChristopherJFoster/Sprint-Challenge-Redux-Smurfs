@@ -1,7 +1,7 @@
 import React from 'react';
-import useInput from '../utilities/useInput';
 import { connect } from 'react-redux';
 
+import useInput from '../utilities/useInput';
 import { addSmurf } from '../actions';
 
 const AddSmurfForm = ({ history, addSmurf }) => {

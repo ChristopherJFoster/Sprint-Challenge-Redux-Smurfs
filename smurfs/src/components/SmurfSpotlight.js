@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Link, Redirect } from 'react-router-dom';
 
-import { Redirect } from 'react-router-dom';
 import useInput from '../utilities/useInput';
 import { deleteSmurf } from '../actions';
 
