@@ -14,15 +14,30 @@ const sendUserError = (msg, res) => {
 
 let smurfs = [
   {
-    name: 'Brainey',
+    id: 0,
+    name: 'Papa Smurf',
+    age: 10000,
+    height: 'three apples'
+  },
+  {
+    id: 1,
+    name: 'Smurfette',
+    age: 189,
+    height: 'three apples'
+  },
+  {
+    id: 2,
+    name: 'Brainy',
     age: 200,
-    height: '5cm'
+    height: 'three apples'
   }
 ];
+
 server.get('/smurfs', (req, res) => {
   res.json(smurfs);
 });
-let smurfId = 0;
+
+let smurfId = 3;
 
 server.post('/smurfs', (req, res) => {
   const { name, age, height } = req.body;
